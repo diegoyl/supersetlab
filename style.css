@@ -1,5 +1,4 @@
 :root {
-
     --superset-pink: rgb(255, 0, 137);
     /* --second-color: rgb(38, 42, 44); */
     /* --third-color: rgb(0, 96, 231); */
@@ -8,11 +7,11 @@
 
 @font-face {
     font-family: "Xanh";
-    src: url("../fonts/XanhMono-Regular.ttf");
+    src: url("/fonts/XanhMono-Regular.ttf");
 }
 @font-face {
     font-family: "Xanh Italic";
-    src: url("../fonts/XanhMono-Italic.ttf");
+    src: url("/fonts/XanhMono-Italic.ttf");
 }
 strong {
     font-weight: normal;
@@ -58,13 +57,16 @@ body {
 #logo:hover {
   filter: invert(100%);
 }
+#logo:hover + body{
+  background-color: white;
+}
 .text1 {
   font-size: 2em;
   /* text-decoration: none; */
   color: white;
 }
 .link:hover {
-  color: black;
+  color: var(--superset-pink);
 }
 
 /* FOR SMALL SCREENS */
