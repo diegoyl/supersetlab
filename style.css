@@ -1,0 +1,79 @@
+:root {
+
+    --superset-pink: rgb(255, 0, 137);
+    /* --second-color: rgb(38, 42, 44); */
+    /* --third-color: rgb(0, 96, 231); */
+    --paragraphFontSize: 20px;
+}
+
+@font-face {
+    font-family: "Xanh";
+    src: url("../fonts/XanhMono-Regular.ttf");
+}
+@font-face {
+    font-family: "Xanh Italic";
+    src: url("../fonts/XanhMono-Italic.ttf");
+}
+strong {
+    font-weight: normal;
+    font-family: "Xanh";
+    /* font-size: var(--paragraphFontSize); */
+}
+
+html {
+    font-family: "Xanh";
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--superset-pink);
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+#container {
+  margin-top: 20vw;
+  padding-top: 20vh;
+  position: relative;
+  /* background-color: rgba(0,00,255,.4); */
+
+
+}
+#logo-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* background-color: #00fff280; */
+  padding: 0;
+  margin: 0;
+}
+
+#logo {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+#logo:hover {
+  filter: invert(100%);
+}
+.text1 {
+  font-size: 2em;
+  /* text-decoration: none; */
+  color: white;
+}
+.link:hover {
+  color: black;
+}
+
+/* FOR SMALL SCREENS */
+/* @media (max-width:1030px){
+    img {
+      max-width: 90%;
+      margin: -1em auto;
+    }
+  #container {
+    margin-top: 30vh;
+  }
+} */
