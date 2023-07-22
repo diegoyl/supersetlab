@@ -25,6 +25,9 @@ html {
     padding: 0;
     margin: 0;
 }
+.paragraph {
+  padding: 0 6%;
+}
 
 body {
     background-color: var(--superset-pink);
@@ -41,8 +44,7 @@ body {
   padding-top: 20vh;
   position: relative;
   /* background-color: rgba(0,00,255,.4); */
-
-
+  
 }
 #logo-container {
   position: fixed;
@@ -76,26 +78,82 @@ body {
 }
 .text1 {
   font-size: 2em;
+  font-weight: bold;
   /* text-decoration: none; */
   color: white;
+  margin: .2em 0;
 }
 .text2 {
   font-size: 1.3em;
   font-weight: normal;
   /* text-decoration: none; */
+  margin: 0;
   color: white;
 }
 .link:hover {
   color: black;
 }
+p span a{
+  margin: 0;
+}
+#ig:hover{
+    background: #515BD4;
+    background: -webkit-linear-gradient(to bottom right, #515BD4 0%, #8134AF 25%, #DD2A7B 51%, #F58529 77%, #FEDA77 100%);
+    background: -moz-linear-gradient(to bottom right, #515BD4 0%, #8134AF 25%, #DD2A7B 51%, #F58529 77%, #FEDA77 100%);
+    background: linear-gradient(to bottom right, #515BD4 0%, #8134AF 25%, #DD2A7B 51%, #F58529 77%, #FEDA77 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* .tightMarginTop {
+  margin-top: -1.5em;
+} */
+.span {
+  margin: 0 1em;
+}
+.monogram {
+  padding:4em;
+}
+.gapDiv{
+  height: 5em;
+}
+
 
 /* FOR SMALL SCREENS */
-/* @media (max-width:1030px){
-    img {
-      max-width: 90%;
-      margin: -1em auto;
-    }
+@media (max-width:1030px){
+  
   #container {
-    margin-top: 30vh;
+  padding-top: 14vh;
   }
-} */
+  #logo-container {
+  width: 97%;
+  padding: 1.5%
+  }
+
+  .text1 {
+  padding: 0 2%;
+  font-size: 5.6em; 
+  font-weight: bold;
+  /* text-decoration: none; */
+  color: white;
+  margin: .2em 0;
+  }
+  .text2 {
+  font-size: 3.4em;
+  font-weight: normal;
+  /* text-decoration: none; */
+  color: white;
+  }
+  .paragraph {
+  font-size: 2.2em;
+  padding: 0 5%;
+  }
+
+  .monogram {
+    padding:15em;
+    height: 15vw;
+  }
+  .gapDiv{
+    height: 10em;
+  }
+
+}
