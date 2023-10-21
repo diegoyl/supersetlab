@@ -10,3 +10,4 @@ $(function() {
     $('body').css('background-color', 'var(--superset-pink)');
   });
 });
+

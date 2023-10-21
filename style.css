@@ -14,8 +14,8 @@
     src: url("./fonts/XanhMono-Italic.ttf");
 }
 strong {
-    font-weight: normal;
-    font-family: "Xanh";
+    /* font-weight: normal;
+    font-family: "Xanh"; */
     /* font-size: var(--paragraphFontSize); */
 }
 
@@ -24,11 +24,15 @@ html {
     font-family: "Xanh";
     padding: 0;
     margin: 0;
+    /* cursor: url('./icon.png'); */
+    /* cursor:all-scroll */
 }
 .paragraph {
   padding: 0 6%;
 }
-
+strong {
+  font-weight: bolder;
+}
 body {
     background-color: var(--superset-pink);
     color: white;
@@ -44,7 +48,6 @@ body {
   padding-top: 20vh;
   position: relative;
   /* background-color: rgba(0,00,255,.4); */
-  
 }
 #logo-container {
   position: fixed;
@@ -53,7 +56,20 @@ body {
   /* background-color: #00fff280; */
   padding: 0;
   margin: 0;
-  padding: 1%
+  padding: 1%;
+  z-index: 100;
+}
+
+/* just in apply */
+#logo-small {
+  position: fixed;
+  top: 3vh;
+  left: 3vh;
+  width: 10%;
+  /* background-color: #00fff280; */
+  padding: 0;
+  margin: 0;
+  z-index: 100;
 }
 
 #logo {
@@ -96,7 +112,12 @@ body {
 p span a{
   margin: 0;
 }
+#ig {
+  text-decoration: none;
+}
+
 #ig:hover{
+    color: #DD2A7B;
     background: #515BD4;
     background: -webkit-linear-gradient(to bottom right, #515BD4 0%, #8134AF 25%, #DD2A7B 51%, #F58529 77%, #FEDA77 100%);
     background: -moz-linear-gradient(to bottom right, #515BD4 0%, #8134AF 25%, #DD2A7B 51%, #F58529 77%, #FEDA77 100%);
@@ -116,7 +137,34 @@ p span a{
 .gapDiv{
   height: 5em;
 }
-
+.alignLeft {
+  text-align: left;
+}
+.applyHeader {
+  margin-bottom: 1em;
+  font-size: 80px;
+  letter-spacing: -2px;
+}
+.applyPar {
+  font-family: sans-serif;
+  font-weight: 100;
+  line-height: 1.3em;
+  font-size: 18px;
+}
+.apBig {
+  font-size: 28px;
+  width: 60%;
+  margin: auto;
+}
+.moreinfo {
+  width: 70%;
+  margin: auto;
+  text-align: left;
+}
+.moreinfoBig {
+  font-weight: bolder;
+  font-size: 24px;
+}
 
 /* FOR SMALL SCREENS */
 @media (max-width:1030px){
