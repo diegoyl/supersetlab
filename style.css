@@ -29,6 +29,8 @@ html {
 }
 .paragraph {
   padding: 0 6%;
+  width:60%; 
+  margin:auto;
 }
 strong {
   font-weight: bolder;
@@ -44,7 +46,7 @@ body {
     animation-delay: .5s;
 }
 #container {
-  margin-top: 20vw;
+  margin-top: 16vw;
   padding-top: 20vh;
   position: relative;
   /* background-color: rgba(0,00,255,.4); */
@@ -103,7 +105,7 @@ body {
   font-size: 1.3em;
   font-weight: normal;
   /* text-decoration: none; */
-  margin: 0;
+  margin: auto;
   color: white;
 }
 .link:hover {
@@ -166,6 +168,36 @@ p span a{
   font-size: 24px;
 }
 
+button {
+	background: var(--superset-pink);
+	color: white;
+	border: none;
+  border-radius: 0;
+	padding: .5em .8em;
+	font: inherit;
+	cursor: pointer;
+  outline: white solid 2px;
+  /* border: white 2px solid; */
+  transition: color .3s linear;
+}
+button:hover {
+	background: white;
+	color: var(--superset-pink);
+}
+
+#superbullets{
+  width:40%; 
+  margin-top:-16px;
+  text-align: left; 
+  margin:auto; 
+}
+.smallbullets{
+  padding-left: 10%; 
+  font-size: 15px;
+}
+#weirddiv{
+  height: 0;
+}
 /* FOR SMALL SCREENS */
 @media (max-width:1030px){
   
@@ -192,10 +224,19 @@ p span a{
   color: white;
   }
   .paragraph {
-  font-size: 2.2em;
-  padding: 0 5%;
+    font-size: 2.2em;
+    padding: 0 5%;
+    width: 90%;
+    /* text-align: left; */
   }
-
+  #subtitle {
+    font-size: 3.5em;
+  }
+  button {
+    font-size: 70px;
+    margin-top: 1.2em;
+    max-width: 80%;
+  }
   .monogram {
     padding:15em;
     height: 15vw;
@@ -204,4 +245,45 @@ p span a{
     height: 10em;
   }
 
+
+  .applyHeader {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    font-size: 8em;
+  }
+  .applyPar {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 100;
+    line-height: 1.3em;
+    font-size: 2.2em;
+  }
+  .apBig {
+    font-size: 3.5em;
+    width: 90%;
+    margin: auto;
+  }
+  .moreinfo {
+    width: 90%;
+    margin: auto;
+    text-align: left;
+  }
+  .moreinfoBig {
+    font-weight: bolder;
+    font-size: 3em;
+  }
+  #superbullets{
+    width:70%; 
+    margin-top:-10px
+  }
+  ul {
+    font-size: 1em;
+  }
+  .smallbullets{
+    padding-left: 10%; 
+    font-size: 2.2em;
+  }
+  #weirddiv{
+    height: 4em;
+  }
 }
